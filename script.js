@@ -1,4 +1,17 @@
 //your JS code here. If required.
-let h1=document.getElementById("h1");
-let val="Width:"+screen.availWidth+" and Height:"+screen.availHeight
-h1.innerText=val;
+
+
+
+(function() {
+  window.onresize = displayWindowSize;
+  window.onload = displayWindowSize;
+
+  function displayWindowSize() {
+    let myWidth = window.innerWidth;
+    let myHeight = window.innerHeight;
+    // your size calculation code here
+    document.getElementById("h1").innerHTML = "Width: "+myWidth + " and Height: " + myHeight;
+  };
+
+
+})();
