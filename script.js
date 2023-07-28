@@ -10,7 +10,7 @@
     let myWidth = window.innerWidth;
     let myHeight = window.innerHeight;
     // your size calculation code here
-    document.getElementById("h1").innerHTML = "Width: "+myWidth + " and Height: " + myHeight;
+    document.getElementById("sizeInfo").innerHTML = "Width: "+myWidth + " and Height: " + myHeight;
   };
 
 
